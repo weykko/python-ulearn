@@ -1,7 +1,7 @@
 import pandas as pd
 
-
 vacancies = pd.read_csv('vacancies_small.csv')
+
 
 def filter_sort_vacancies(vacancies, column, key, sort_by, sort_order):
     filtered_vacancies = vacancies[vacancies[column].str.contains(key, case=False, na=False)]

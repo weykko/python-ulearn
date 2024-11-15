@@ -1,8 +1,8 @@
 import pandas as pd
 from collections import Counter
 
-
 vacancies = pd.read_csv('vacancies_small.csv')
+
 
 def get_top_skills(vacancies, profession, sort_order):
     filtered_vacancies = vacancies[vacancies['name'].str.contains(profession, case=False, na=False)]
